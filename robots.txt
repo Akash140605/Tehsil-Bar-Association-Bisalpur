@@ -1,0 +1,19 @@
+# Allow all crawlers access to the entire website
+User-agent: *
+Disallow: /admin/   # Block admin page (if any)
+Disallow: /login/   # Block login page (if any)
+Disallow: /register/ # Block registration page (if any)
+
+# Allow crawling of important directories
+Allow: /blog/
+Allow: /about/
+Allow: /contact/
+
+# Block search engines from indexing duplicate content, such as parameters in URLs
+Disallow: /*?* # Block URLs with parameters (e.g., session IDs or tracking parameters)
+
+# Optionally, you can specify a crawl delay if needed (in seconds)
+Crawl-delay: 10 # Crawl delay to avoid overloading your server
+
+# Sitemap location (important for SEO)
+Sitemap: https://tehsilbarassociationbisalpur.in/sitemap.xml
